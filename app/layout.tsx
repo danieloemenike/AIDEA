@@ -1,8 +1,20 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from '@/providers/theme-provider'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+  
+const blanka = localFont({
+  src: '../fonts/Blanka-Regular.otf',
+  display: 'swap',
+  variable: '--font-blanka'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +28,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={  `${inter.variable} ${blanka.variable}` }>
+      <ThemeProvider 
+            attribute="class" 
+            defaultTheme="dark" 
+            enableSystem
+          >
+          { children }
+          </ThemeProvider>
+      </body>
     </html>
   )
 }
