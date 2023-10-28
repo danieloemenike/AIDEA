@@ -2,10 +2,12 @@ import { redirect } from "next/navigation";
 
 
 import prismadb from "@/lib/prismadb";
-import { checkSubscription } from "@/lib/subscription";
-
-import { aideaForm } from "./components/aidea-form";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import AideaForm from "./_components/AideaForm";
+// import { checkSubscription } from "@/lib/subscription";
+
+
+
 
 interface aideaIDPageProps {
   params: {
@@ -19,29 +21,29 @@ export default async function AideaIDPage ({
     const { getUser, isAuthenticated } = getKindeServerSession();
     const user = await getUser();
 
-  if (!user) {
+  if (!user.id) {
     return redirect("/");
   }
   if (await !isAuthenticated()) {
     return redirect("/");
   }
-  const validSubscription = await checkSubscription();
+  // const validSubscription = await checkSubscription();
 
-  if (!validSubscription) {
-    return redirect("/");
-  }
+  // if (!validSubscription) {
+  //   return redirect("/");
+  // }
 
-  const aidea = await prismadb.aidea.findUnique({
+  const aideaData = await prismadb.aidea.findUnique({
     where: {
       id: params.aideaID,
-      userId,
+      userId: user.id,
     }
-  });
+  }) || null;
 
   const categories = await prismadb.category.findMany();
 
   return ( 
-    <aideaForm initialData={aidea} categories={categories} />
+    <AideaForm initialData={aideaData} categories={categories} />
   );
 }
  

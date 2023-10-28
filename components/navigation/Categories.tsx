@@ -73,7 +73,7 @@ export function Categories({
             variant={!categoryId ? "secondary" : "outline"}
             className="py-1 px-3 rounded-lg whitespace-nowrap"
           >
-            Recent Aidea
+            Latest Featured Aidea
           </Button>
         {categories.map(category => (
           <Button

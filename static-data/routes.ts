@@ -3,12 +3,12 @@ import { FcHome, FcSms,FcSettings, FcPaid,FcDoughnutChart,FcMusic,FcVideoCall,Fc
 export const Menu = [
     {
         id: "1",
-        label: "Analytics",
+        label: "Overview",
         menu: [
             {
                 id: "1",
                 title: 'Dashboard',
-                path: 'dashboard',
+                path: '/dashboard',
                 pro: false,
                 icon: FcHome,
                 color: "#292929"
@@ -22,7 +22,7 @@ export const Menu = [
             {
                 id: "1",
                 title: 'Create',
-                path: 'create',
+                path: '/aidea/new',
                 pro: true,
                 icon: FcPlus,
                 color: "#292929"
@@ -30,7 +30,7 @@ export const Menu = [
             {
                 id: "2",
                 title: 'conversation',
-                path: 'conversation',
+                path: '/conversation',
                 pro: false,
                 icon: FcSms,
                 color: "#292929"
@@ -38,7 +38,7 @@ export const Menu = [
             {
                 id: "3",
                 title: 'image generation',
-                path: 'image',
+                path: '/image',
                 pro: false,
                 icon: FcAddImage,
                 color: "#292929"
@@ -46,7 +46,7 @@ export const Menu = [
             {
                 id: "4",
                 title: 'music generation',
-                path: 'music',
+                path: '/music',
                 pro: false,
                 icon: FcMusic,
                 color: "#292929"
@@ -54,7 +54,7 @@ export const Menu = [
             {
                 id: "5",
                 title: 'video generation',
-                path: 'video',
+                path: '/video',
                 pro: false,
                 icon: FcVideoCall,
                 color: "#292929"
@@ -62,7 +62,7 @@ export const Menu = [
             {
                 id: "6",
                 title: 'code generation',
-                path: 'code',
+                path: '/code',
                   pro: false,
                 icon: FcDoughnutChart,
                 color: "#292929"
@@ -76,7 +76,7 @@ export const Menu = [
             {
                 id: "1",
                 title: 'Settings',
-                path: 'settings',
+                path: '/settings',
                 pro: false,
                 icon: FcSettings,
                 color: "#292929"

@@ -20,7 +20,7 @@ function Header({showEssentials }: Props) {
     const user = getUser();
   return (
       <>
-          <header className=' shadow w-full mb-1 sticky top-0 z-50 '>
+          <header className=' shadow-md dark:shadow-2xl w-full mb-1 sticky top-0 z-50 backdrop-filter backdrop-blur-lg  border-b-2'>
               <nav className=" flex  gap-10 lg:gap-20 justify-between mx-10 pt-2 items-center  h-[5rem]">
               {/* <PageHeaderFirstSection hidden={showFullWidthSearch} />
        */}
@@ -29,7 +29,7 @@ function Header({showEssentials }: Props) {
                            <MobileSideBar/>
                       )}
                 
-              <Image src = {Aidea} alt= "Aidea Logo" className='object-contain h-10 w-full' priority role='img' />
+              <Image src = {Aidea} alt= "Aidea Logo" className='object-contain h-12 ml-4 w-full' priority role='img' />
                   </div>
                   { showEssentials && (
                        <SearchInput />
@@ -40,8 +40,8 @@ function Header({showEssentials }: Props) {
                       { showEssentials && ( 
                           
                      
-                  <Button className='bg-blue-600 text-white dark:bg-white dark:text-black'>
-                      Upgrade
+                  <Button className='bg-gradient-to-r from-sky-800 via-stone-600  to-blue-800 dark:text-white shadow-2xl hover:bg-blue-700 dark:bg-white'>
+                     Upgrade to Aidea Pro
              </Button>
                            )}
                   <nav className='flex '>
@@ -50,7 +50,7 @@ function Header({showEssentials }: Props) {
                          (<>
                              <div className='flex items-center justify-center  h-full w-full gap-4 '>
                         <LoginLink className="">Sign in</LoginLink>
-                                 <RegisterLink className="text-white text-bold bg-blue-600  rounded  p-2 ">Get Started</RegisterLink>
+                                 <RegisterLink className="text-white text-bold bg-gradient-to-br from-cyan-600 to-blue-800  rounded  p-2 ">Get Started</RegisterLink>
                                  </div>
                          </>)
                      :
@@ -61,7 +61,7 @@ function Header({showEssentials }: Props) {
                              <Image className="rounded-full border border-white" src={ user?.picture } width={ 55 } height={ 55} alt = "user profile avatar" />
                          ) :
                              (
-                                 <div className='bg-purple-800 text-white rounded-full p-4'>
+                                 <div className='bg-gradient-to-r from-blue-800 via-cyan-600 to-blue-800 text-white rounded-full p-4'>
                                      {user?.given_name?.[0]}
                                          {user?.family_name?.[0]}
                                  </div>

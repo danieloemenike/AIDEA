@@ -8,7 +8,7 @@ type Props = {};
 
 function Home({}: Props) {
     return (
-        <main className="">
+        <main className="h-screen w-full bg-white/70 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-700 via-black to-black m-0  ">
              <Header showEssentials = {false} /> 
             <HeroSection /> 
           

@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={  `${inter.variable} ${blanka.variable}` }>
+      <body className={  `${inter.variable} ${blanka.variable}  ` }>
       <ThemeProvider 
             attribute="class" 
             defaultTheme="dark" 

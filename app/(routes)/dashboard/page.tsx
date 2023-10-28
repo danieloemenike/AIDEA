@@ -1,20 +1,48 @@
 
 import { Categories } from '@/components/navigation/Categories';
+import { Separator } from '@/components/ui/separator';
 import prismadb from '@/lib/prismadb'
+import { Aideas } from './_components/Aideas';
 
 
-type Props = {}
+interface RootPageProps {
+  searchParams: {
+    categoryId: string;
+    name: string;
+  };
+};
 
-export default async function page({ }: Props) {
+
+export default async function page( { searchParams
+}: RootPageProps) {
   const categories = await prismadb.category.findMany();
+  const data = await prismadb.aidea.findMany({
+    where: {
+      categoryId: searchParams.categoryId,
+      name: {
+        search: searchParams.name,
+      },
+    },
+    orderBy: {
+      createdAt: "desc"
+    },
+    include: {
+      _count: {
+        select: {
+          messages: true,
+        }
+      }
+    },
+  });
 
   return (
     <>
   
-      <main className=''>
+      <main className='h-screen w-full'>
         <Categories categories={categories} />
-        <h2> Dashboard </h2>
-        
+        <Separator className="bg-primary/10 my-2" />
+      
+        <Aideas data={data} />
       </main>
     
 
