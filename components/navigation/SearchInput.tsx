@@ -16,7 +16,7 @@ function SearchInput({}: Props) {
     const debouncedValue = useDebounce<string>(value, 1000);
 
     
-  const onChange = () => {
+  const onChange = (e: any) => {
     setValue(e.target.value);
   };
 
