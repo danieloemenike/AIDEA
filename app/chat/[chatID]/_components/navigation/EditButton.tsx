@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { 
     DropdownMenu, 
     DropdownMenuContent, 
@@ -11,7 +11,8 @@ import { Edit, MoreVertical, Trash } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import EditIcon from './ui/editIcon';
 import DeleteIcon from './ui/deleteIcon';
-  
+import { useUserStore } from "@/providers/store";
+
 
 interface Props {
     aideaID: string
@@ -19,10 +20,10 @@ interface Props {
    
   };
 
-export default async function EditButton({ aideaUserID, aideaID }: Props) {
- 
-    const { getUser } = getKindeServerSession();
-    const user = await getUser();
+export default function EditButton({ aideaUserID, aideaID }: Props) {
+
+  const user = useUserStore((state) => state.user);
+  
     return (
   <>
     {user?.id === aideaUserID && (

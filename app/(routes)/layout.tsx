@@ -4,7 +4,8 @@ import Header from '@/components/navigation/Header'
 import Sidebar from '@/components/navigation/Sidebar'
 import { Toaster } from '@/components/ui/toaster'
 import type { Metadata } from 'next'
-
+import { KindeUser,getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
+import { useUserStore } from '@/providers/store'
 export const metadata: Metadata = {
   title: 'Dashboard',
   description: 'Aidea Dashboard ',
@@ -14,13 +15,14 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  }) {
+
   return (
     <>
      <div className= "bg-white/70 dark:bg-black">
         <Header showEssentials />
        
-          <Sidebar />
+          <Sidebar />  
           <div className='w-full h-full'>
 
        

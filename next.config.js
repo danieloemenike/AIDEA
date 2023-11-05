@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        serverActions: true
-      },
     images: {
     domains: ['lh3.googleusercontent.com', "res.cloudinary.com"]
     }
@@ -10,3 +7,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.

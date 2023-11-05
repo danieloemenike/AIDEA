@@ -1,8 +1,10 @@
+
 import { ChevronLeft, Edit, MessagesSquare, } from "lucide-react";
 import { Aidea, Message } from "@prisma/client";
 import EditButton from "./EditButton";
 import Link from "next/link";
-import { AiAvatar } from "./ui/aiAvatar";
+import { AiAvatar } from "../../../../../components/aiAvatar";
+
 
 interface ChatHeaderProps {
   aidea: Aidea & {
@@ -13,10 +15,10 @@ interface ChatHeaderProps {
   };
 };
 
-export const ChatHeader = ({
+export const ChatHeader =  ({
   aidea,
 }: ChatHeaderProps) => {
-
+ 
   return (
     <div className="flex w-full justify-between items-center border-b border-primary/10 pb-4">
       <div className="flex gap-x-2 items-center">
@@ -38,7 +40,8 @@ export const ChatHeader = ({
           </p>
         </div>
           </div>
-          <EditButton aideaUserID={ aidea.userId } aideaID={ aidea.id } />
+       
+          <EditButton aideaUserID={ aidea.userId } aideaID={ aidea.id }/> 
     
     </div>
   );

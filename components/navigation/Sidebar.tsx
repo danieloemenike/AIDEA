@@ -11,7 +11,7 @@ import { Button } from '../ui/button'
 import { Sparkles } from 'lucide-react'
 type Props = {}
 
-export default async function Sidebar({}: Props) {
+export default function Sidebar({}: Props) {
   
   return (
       <aside className="hidden md:flex flex-col fixed left-0 h-full w-52 px-4 py-8 bg-white shadow-xl dark:bg-black rtl:border-l z-50 ">

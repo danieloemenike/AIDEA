@@ -1,6 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 
+    AIDEA
 
-## Getting Started
+## AI-DEA: Create & Chat with your favorite personality. Your imagination is possble without limits.
+
+![1699165446449](image/README/1699165446449.png)
+
+Chat History Available
+
+![1699165509516](image/README/1699165509516.png)
+
+
 
 First, run the development server:
 

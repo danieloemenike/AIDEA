@@ -5,6 +5,7 @@ import prismadb from "@/lib/prismadb";
 
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { ChatClient } from "./_components/ChatClient";
+import { useUserStore } from "@/providers/store";
 
 
 interface ChatIDPageProps {
@@ -18,7 +19,8 @@ const ChatIDPage = async ({
 }: ChatIDPageProps) => {
     const { getUser, isAuthenticated } = getKindeServerSession();
       const user = await getUser();
-  
+
+
     if (!user.id) {
       return redirect("/");
     }
@@ -53,7 +55,8 @@ const ChatIDPage = async ({
   }
 
   return (
-    <ChatClient aidea={aidea} />
+    <ChatClient aidea={ aidea } user={user } />
+    
   );
 }
  

@@ -54,7 +54,7 @@ export const Aideas = ({
               </p>
             </CardHeader>
             <CardFooter className="flex items-center justify-between text-xs text-muted-foreground">
-              <p className="lowercase text-blue-600 dark:text-cyan-400">by @{item.userName}</p>
+              <p className=""> Creator: @<span className="lowercase">{item.userName} </span> </p>
               <div className="flex items-center">
                 <MessagesSquare className="w-3 h-3 mr-1" />
                 {item._count.messages}
