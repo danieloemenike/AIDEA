@@ -3,13 +3,13 @@
 
 ## AI-DEA: Create & Chat with your favorite personality. Your imagination is possble without limits.
 
-![1699165446449](image/README/1699165446449.png)
+
+
+![1699166922899](image/README/1699166922899.png)
 
 Chat History Available
 
-![1699165509516](image/README/1699165509516.png)
-
-
+![1699166860622](image/README/1699166860622.png)
 
 First, run the development server:
 
