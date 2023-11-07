@@ -20,7 +20,7 @@ function Header({showEssentials }: Props) {
     const user = getUser();
   return (
       <>
-          <header className=' shadow-md dark:shadow-2xl w-full mb-1 sticky top-0 z-50 backdrop-filter backdrop-blur-lg  border-b-2'>
+          <header className=' shadow-md dark:bg-black bg-white dark:shadow-2xl w-full mb-1 sticky top-0 z-50 backdrop-filter backdrop-blur-lg  border-b-2'>
               <nav className=" flex  gap-10 lg:gap-20 justify-between mx-10 pt-2 items-center  h-[5rem]">
               {/* <PageHeaderFirstSection hidden={showFullWidthSearch} />
        */}
