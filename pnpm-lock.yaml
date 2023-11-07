@@ -64,7 +64,7 @@ dependencies:
     version: 16.3.1
   langchain:
     specifier: ^0.0.180
-    version: 0.0.180(@pinecone-database/pinecone@1.1.2)(@upstash/redis@1.24.3)(axios@1.5.1)(replicate@0.20.1)
+    version: 0.0.180(@pinecone-database/pinecone@1.1.2)(@upstash/redis@1.24.3)(axios@1.5.1)(replicate@0.18.0)
   lucide-react:
     specifier: ^0.288.0
     version: 0.288.0(react@18.2.0)
@@ -102,8 +102,8 @@ dependencies:
     specifier: ^0.13.8
     version: 0.13.8(react-dom@18.2.0)(react@18.2.0)
   replicate:
-    specifier: ^0.20.1
-    version: 0.20.1
+    specifier: ^0.18.0
+    version: 0.18.0
   tailwind-merge:
     specifier: ^1.14.0
     version: 1.14.0
@@ -1975,7 +1975,7 @@ packages:
     resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
     dev: false
 
-  /langchain@0.0.180(@pinecone-database/pinecone@1.1.2)(@upstash/redis@1.24.3)(axios@1.5.1)(replicate@0.20.1):
+  /langchain@0.0.180(@pinecone-database/pinecone@1.1.2)(@upstash/redis@1.24.3)(axios@1.5.1)(replicate@0.18.0):
     resolution: {integrity: sha512-/70mZsBAUcGZHiHTEs0pO1+xyVwj4X1FMl2LmTuBv83/+yNYkAJJg5+rLI9u6Obj7ZcsoNmqIPpsOL5rx2yJww==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -2293,7 +2293,7 @@ packages:
       openapi-types: 12.1.3
       p-queue: 6.6.2
       p-retry: 4.6.2
-      replicate: 0.20.1
+      replicate: 0.18.0
       uuid: 9.0.1
       yaml: 2.3.3
       zod: 3.22.4
@@ -2852,8 +2852,8 @@ packages:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
     dev: false
 
-  /replicate@0.20.1:
-    resolution: {integrity: sha512-QVyI1rowGsSfNuDrRmumYPdCHa/fN/RkI3NHpcK0i5hSSiWK69URAyheAC/0MIAiS3oUs4kD56PB9zEI4oHENw==}
+  /replicate@0.18.0:
+    resolution: {integrity: sha512-b1SabhR4XFXqWbM4551tmc7hL+x+dnzka9YA6lcbzbyGDPHKELRdgRc6nn9jxK1VyTg70O39mCIo0e15DVZELw==}
     engines: {git: '>=2.11.0', node: '>=18.0.0', npm: '>=7.19.0', yarn: '>=1.7.0'}
     dev: false
 
