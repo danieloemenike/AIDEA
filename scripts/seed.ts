@@ -24,4 +24,5 @@ async function main() {
 
 main();
 
-//node scripts/seed.ts
+//pnpm dlx prisma migrate dev --name init
+// node scripts/seed.ts

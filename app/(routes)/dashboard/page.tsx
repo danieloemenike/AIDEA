@@ -15,12 +15,12 @@ interface RootPageProps {
 
 export default async function page( { searchParams
 }: RootPageProps) {
-  const categories = await prismadb.category.findMany();
-  const data = await prismadb.aidea.findMany({
+  const categories = await prismadb?.category?.findMany();
+  const data = await prismadb?.aidea?.findMany({
     where: {
-      categoryId: searchParams.categoryId,
+      categoryId: searchParams?.categoryId,
       name: {
-        search: searchParams.name,
+        search: searchParams?.name,
       },
     },
     orderBy: {

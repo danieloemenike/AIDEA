@@ -27,62 +27,62 @@ export const Menu = [
                 icon: FcPlus,
                 color: "#292929"
             },
-            {
-                id: "2",
-                title: 'conversation',
-                path: '/conversation',
-                pro: false,
-                icon: FcSms,
-                color: "#292929"
-            },
-            {
-                id: "3",
-                title: 'image generation',
-                path: '/image',
-                pro: false,
-                icon: FcAddImage,
-                color: "#292929"
-            },
-            {
-                id: "4",
-                title: 'music generation',
-                path: '/music',
-                pro: false,
-                icon: FcMusic,
-                color: "#292929"
-            },
-            {
-                id: "5",
-                title: 'video generation',
-                path: '/video',
-                pro: false,
-                icon: FcVideoCall,
-                color: "#292929"
-            },
-            {
-                id: "6",
-                title: 'code generation',
-                path: '/code',
-                  pro: false,
-                icon: FcDoughnutChart,
-                color: "#292929"
-            },
+            // {
+            //     id: "2",
+            //     title: 'conversation',
+            //     path: '/conversation',
+            //     pro: false,
+            //     icon: FcSms,
+            //     color: "#292929"
+            // },
+            // {
+            //     id: "3",
+            //     title: 'image generation',
+            //     path: '/image',
+            //     pro: false,
+            //     icon: FcAddImage,
+            //     color: "#292929"
+            // },
+            // {
+            //     id: "4",
+            //     title: 'music generation',
+            //     path: '/music',
+            //     pro: false,
+            //     icon: FcMusic,
+            //     color: "#292929"
+            // },
+            // {
+            //     id: "5",
+            //     title: 'video generation',
+            //     path: '/video',
+            //     pro: false,
+            //     icon: FcVideoCall,
+            //     color: "#292929"
+            // },
+            // {
+            //     id: "6",
+            //     title: 'code generation',
+            //     path: '/code',
+            //       pro: false,
+            //     icon: FcDoughnutChart,
+            //     color: "#292929"
+            // },
         ]
     },
-    {
-        id: "3",
-        label: "Customization",
-        menu: [
-            {
-                id: "1",
-                title: 'Settings',
-                path: '/settings',
-                pro: false,
-                icon: FcSettings,
-                color: "#292929"
-            },
-        ]
-    }
+    // {
+    //     id: "3",
+    //     label: "Customization",
+    //     menu: [
+    //         {
+    //             id: "1",
+    //             title: 'Settings',
+    //             path: '/settings',
+    //             pro: false,
+    //             icon: FcSettings,
+    //             color: "#292929"
+    //         },
+    //     ]
+    // }
    
    
   
